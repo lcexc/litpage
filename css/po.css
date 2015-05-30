@@ -1,0 +1,90 @@
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+
+.post-outer{
+	width:960px;
+	margin:0 auto;
+	
+}
+.post{
+	width:95%;
+	padding:10px;
+	background:#fff;
+}
+.post .img-thumbnail{
+	float:left;
+	margin:10px;
+	padding: 0;
+	width:30%;
+
+	margin-right: 20px;
+}
+.post .img-thumbnail img{
+	width:100%;
+   -moz-transition: all 0.8s;
+   -webkit-transition: all 0.8s; 
+   -o-transition: all 0.8s;
+   transition: all 0.8s; 
+}
+.post .img-thumbnail img:hover{
+
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+}
+
+
+.post .post-title a{
+	color:#232323;
+}
+.post-info{
+	font-size:12px;
+	line-height:30px;
+}
+.read-more{
+	display:inline-block;
+	margin-top:20px;
+	margin-left: 20px;
+
+	width:100px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	
+	background:#eb6841;
+}
+.read-more:hover{
+	background:#eee;
+}
+
+
+.page-navigator{
+	height:35px;
+	list-style: none;
+}
+.page-navigator li,.page-navigator li a{
+	
+	width:40px;
+	line-height: 35px;
+	text-align: center;
+	background:#aaa;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.page-navigator li{
+	margin:0px 15px;
+
+}
+.page-navigator .current,.page-navigator li.current a{
+	background:#ccc;
+}
+.page-navigator li a:hover{
+	background:#ccc;
+}
