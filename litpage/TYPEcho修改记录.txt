@@ -1,0 +1,2 @@
+TYPEcho修改记录
+1. 20150518 var/Typecho/Widget/Helper/PageNavigator/Box.php 文件  line 53 增加id="page_current" 在分页时为当前页加了id
