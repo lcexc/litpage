@@ -1,0 +1,398 @@
+body {
+	font-family:"Droid Serif",Georgia,"Times New Roman",STHeiti,serif;
+	width:100%;
+	text-align:center;/* 解决IE内容无法居中 */
+	margin: 0;
+	padding: 0;
+	color: #232323;
+}
+
+*{margin: 0; padding: 0;}
+
+
+/* @font-face
+{
+font-family: myFirstFont;
+src: url('../font/huakangshaonv.ttf');
+} */
+
+a{text-decoration:none;}
+
+img{border:0px;}
+/* ~~ 此固定宽度容器包含其它 div ~~ */
+.container {
+	width:90%;
+	margin:10px auto;
+	text-align:left;
+}
+
+
+/* ~~ 标题未指定宽度。它将扩展到布局的完整宽度。标题包含一个图像占位符，该占位符应替换为您自己的链接徽标 ~~ */
+.header{
+	 height:180px;
+	width:100%;
+	text-align:left;
+	
+}
+
+.sidebar {
+	float: right;
+	width: 25%px;
+	/* background-color: #EADCAE; */
+	padding-bottom: 10px;
+}
+.content {
+	/*margin-left:10px; */
+	padding: 10px 0;
+	width: 70%;
+	float: left;
+	
+}
+
+
+
+/* ~~ 脚注 ~~ */
+.footer {
+	padding: 10px 0;
+	
+	position: relative;/* 这可以使 IE6 hasLayout 以正确方式进行清除 */
+	clear: both; /* 此清除属性强制 .container 了解列的结束位置以及包含列的位置 */
+}
+.footer p{font-family: "Times New Roman", Times, serif;text-align:center;}
+/* ~~ 其它浮动/清除类 ~~ */
+
+.clearfloat { /* 如果从 #container 中删除或移出了 #footer，则可以将此类放置在 <br /> 或空 div 中，作为 #container 内最后一个浮动 div 之后的最终元素 */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+
+
+#logo{ 
+	padding:30px 100px;
+	height:50px;
+	
+}
+#logo a{
+	line-height:50px;
+	font-size:2.5em;
+}
+#logo .txt{
+	padding-top:15px;
+	padding-left: 50px;
+	line-height:16px;
+	font-size:14px;
+}
+
+.hh{height:15px;}
+
+/*========================================================================*/
+ #goTopBtn{
+            width:50px;
+            height:50px;
+            position:fixed;
+            bottom:30px;
+            right:20px;
+            background:rgba(30,30,30,.5);
+            background: url(../images/up.png);
+            cursor: pointer;
+      }
+
+#navbar{
+	width:100%;
+	height:35px;
+	padding-left:0;
+	position:absolute;
+	top:145px;
+	left:0px; 
+	
+	text-align:left;
+	}
+#navbar ul{ 
+	margin-left:200px;
+	padding-left:0px;
+	list-style:none;
+	line-height:35px;
+	text-align:left;
+	*display:inline;
+	}
+#navbar li a{
+	float:left;
+	width:100px;
+	margin-right:15px;
+	text-align:center;
+	text-decoration:none;
+	line-height:35px;
+	font-size:20px;
+	*display:inline;
+	}
+#navbar li{float:left;}
+/*--------------------*/
+.sidebar ul{
+	margin-left:5px;
+	margin-top:10px;
+	padding:4px 10px 10px;
+	list-style:none;
+}
+
+.sidebar .panel{
+	width:210px;
+	border:1px solid #fff;
+	border-radius: 5px;
+
+}
+.sidebar .panel ul{
+	margin:0;
+
+	padding:0;
+}
+
+.sidebar .panel li{
+	margin:0px;
+	line-height:20px;
+	padding:3px 5px;
+	border-bottom:1px solid #f5f5f5;
+}
+.sidebar .panel .tit{
+	font-size:1.2em;
+	height:25px;
+	line-height:25px;
+}
+.sidebar a{
+	font-size:14px;
+}
+
+
+.sidebar .panel ul ul{margin-left:30px;}
+.sidebar .panel ul ul li{border:none;}
+/*end sidebar*/
+
+.post{
+	//margin:5px auto;
+	/* margin-left:20px; */
+	width:100%;
+	border: 1px solid #dddddd;
+	line-height:25px;
+	border-radius: 5px;
+
+}
+.post .tit{
+	
+	font-size:1.2em;
+	height:30px;
+	line-height:30px;
+	
+	border: 1px solid #dddddd;
+	border-bottom:0px;
+	border-radius: 5px;
+}
+.post .s{padding-left:20px;padding-right:20px;}
+
+.post .text{padding-top:10px;padding-bottom:10px;}
+.post li{padding:5px 0 0 20px;}
+.post ul{margin-bottom:10px;}
+.more{height:25px;line-height:25px;text-align:rigth;}
+
+/*******/
+.search_bar{
+	float:right;
+	position: absolute;
+	top:70px;
+	right:50px;
+	 
+	width:320px;
+	height:40px;
+	
+	line-height:40px;
+	border:none;
+
+  
+  }
+  
+
+  .search_bar input{
+	padding:5px 48px 5px 5px;
+	width:220px;
+	height:30px;
+	border:none ;
+	line-height:30px;
+	font-size:14px;
+	display:inline;
+	border-radius:3px;
+	//outline:none;
+	}
+
+.search_bar #searchbtn{
+	height:36px;
+	width:36px;
+	padding-left:0px;
+	padding-right:0px;
+	
+	position:relative;
+	top:10px;
+	right:40px;
+	background:url(../images/icon-search36.png);
+	border:none;
+	cursor: pointer;
+	/* font-family:myFirstFont; */
+	/* font-size:px; */
+	text-align:center;
+	color:#F00;
+	outline:none;
+
+}
+
+
+/*cal*/
+#cal{
+	width:210px;
+	height:170px;
+	padding:0px;
+	/* border: 1px solid #000; */
+}
+#cal td,#cal th {
+	/* border: 1px solid #000; */
+	text-align: center;
+}
+
+
+#bottom_bar{display:none;}
+
+/*底部版权*/
+#designer{position: absolute;right: 10px;}
+/*===============================post==============================================*/
+.post_read{
+	margin:5px 10px 5px;
+	padding-top:10px;
+	background:rgb(250,250,250);
+}
+.post_read h2{
+	text-align:center;
+}
+.post_info{
+	height:50px;
+	margin-top:10px;
+	padding-left:20px;
+	line-height:50px;
+	border-top:1px solid #f00;
+	border-bottom:1px solid #f00;
+}
+.post_content{
+	margin-top:10px;
+	line-height:25px;
+	padding-left:20px;
+	}
+.post_foot{
+	padding:5px 10px 10px 20px;
+	border-top:1px solid #f00;
+}
+
+.page-content{
+	margin-top:15px;
+	line-height:25px;
+	padding-left:20px;
+}
+.comments{
+	margin:10px 50px 10px;
+	height:300px;
+	background:#f1f1f1;
+}
+.comments #replay{
+	padding:15px;
+	width:60%;
+	height:130px;
+	//max-width:60%;
+	font-size:16px;
+}
+/*=============================================================================*/
+/*SKIN*/
+body{background:#fff;}  /* 全局背景 */
+.header{background: url(../images/471.jpg) repeat;}/* 页头填充图 */
+
+
+
+.navbar{/* background:#f00; */}/*rgb(,,) 导航背景 */
+#navbar ul li a:hover {background-color: #f5f5f5;}
+#navbar .visted{background:#f5f5f5;}		/* 导航栏a标签 */
+
+.search_bar input{background:#fff;}/* 搜索框内颜色 */
+
+
+.sidebar .panel .tit,.post .tit{background:rgb(240,240,240);}/* 左侧栏标题背景 文章标题背景*/
+.sidebar .panel,.post{background:rgb(250,250,250);}/* 左侧栏内容背景 文章内容背景*/
+
+.content{/* background-color: #f8f8f8; 
+	border: 1px solid #dddddd;
+	border-radius: 3px;*/}/* 内容 */
+
+
+
+/*-----日历背景------*/
+
+#cal th{background:rgb(240,240,240);}/* 日历表头 */
+#cal tr{ background:rgb(250,250,250); color:#767676;}/* 日历内容 */
+#cal #cal_today{background:#f0f0f0;}/* 当前天背景 */
+/*------------------*/
+.footer{background-color: rgba(10,10,10,.3);}/* 页脚 */
+/*============================================================================*/
+/*phone*/ 
+/*min 600
+min 960*/
+
+@media screen and (min-width: 1380px){
+	.container {width:1024px;}
+	
+	.sidebar {
+		margin-top:-10px;
+		width:23%;
+		}
+	.sidebar .panel{width:100%;}
+	.content {
+	width:75%;
+	margin-left:0px;
+	
+	}
+	.post{width:95%;margin:0 auto;}
+	#navbar ul{ margin-left:5px;font-size:18px;}
+	
+}
+
+@media only screen and (min-width: 640px) and (max-width: 979px){
+	.container {width:100%;}
+	#cal,.search_bar {
+		display:none;
+		}
+	.sidebar {
+		margin-top:-10px;
+		width:23%;
+		}
+	.sidebar .panel{width:100%;}
+	.content {
+	width:75%;
+	margin-left:0px;
+	
+	}
+	.post{width:95%;margin:0 auto;}
+	#navbar ul{ margin-left:5px;font-size:18px;}
+}
+@media only screen and (max-width: 639px) {
+	.container {width:100%;}
+	
+	.sidebar {
+		display:none;
+		}
+	.content {float:none; width:98%;margin:0 auto;}
+	.post{width:100%;margin:0 auto;}
+	.search_bar{display:none;}
+	#bottom_bar{width:98%;display:block;}
+	#navbar{
+		position:absolute;
+		top:160px;
+		left:0px;
+		height:20px;
+		}
+	#navbar ul{ margin-left:5px;height:20px;line-height:20px;}
+	#navbar li a{width:50px;font-size:14px;line-height:20px;}
+}
